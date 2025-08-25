@@ -42,6 +42,7 @@ module "blog_sg" {
   egress_cidr_blocks  = ["0.0.0.0/0"]
 }
 
+
 resource "aws_security_group_rule" "blog_http_in" {
   type        = "ingress"
   from_port   = 80
